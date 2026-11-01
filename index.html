@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranjith Palani M | Senior Data & AI Solutions Engineer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Mermaid.js for Interactive Architecture Diagrams -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+    .glassmorphism {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .mermaid svg {
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 0.5rem;
+    }
+    .lightbox-open {
+      overflow: hidden;
+    }
+    .gallery-img-card:hover .gallery-overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Fixed Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glassmorphism border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-blue-500/20">
+          RP
+        </div>
+        <div>
+          <span class="font-bold tracking-tight text-white block text-sm sm:text-base">Ranjith Palani M</span>
+          <span class="text-xs text-blue-400 font-medium hidden sm:block">Senior Data & AI Solutions Engineer | Cloud Data Architect</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
+        <a href="#overview" class="hover:text-blue-400 transition-colors">Overview</a>
+        <a href="#gallery" class="hover:text-blue-400 text-blue-400 flex items-center gap-1.5 font-semibold">
+          <i data-lucide="image" class="w-4 h-4"></i> Visual Evidence
+        </a>
+        <a href="#systems" class="hover:text-blue-400 transition-colors">Flagship Systems</a>
+        <a href="#vcycle" class="hover:text-blue-400 transition-colors">Automotive V-Cycle</a>
+        <a href="#docker-guide" class="hover:text-blue-400 transition-colors">Container Architecture</a>
+        <a href="#finops" class="hover:text-blue-400 transition-colors">GCP FinOps</a>
+        <a href="#prague" class="hover:text-blue-400 transition-colors">Prague Missions</a>
+      </div>
+
+      <!-- Quick Action CTA -->
+      <div class="flex items-center space-x-3">
+        <a href="Ranjith_Palani_Senior_Resume.pdf" download class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-md shadow-blue-600/30">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Resume PDF</span>
+        </a>
+        <a href="Ranjith_Palani_Senior_Resume.docx" download class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-blue-400"></i>
+          <span>Word (.docx)</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="overview" class="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="relative rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-800 bg-gradient-to-b from-slate-900/90 via-slate-900/50 to-slate-950 overflow-hidden shadow-2xl">
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-4xl">
+        <!-- Senior Status Badges -->
+        <div class="flex flex-wrap gap-2.5 mb-6">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            <i data-lucide="users" class="w-3.5 h-3.5 text-blue-400"></i>
+            Functional Lead (Sub-Team of 3)
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            <i data-lucide="trending-down" class="w-3.5 h-3.5 text-emerald-400"></i>
+            GCP FinOps SME (35%+ Cloud Cost Cut)
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
+            <i data-lucide="plane" class="w-3.5 h-3.5 text-purple-400"></i>
+            Dual On-Site Prague R&D Missions
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+            <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
+            2x Rising & Shining Star Awardee (2026)
+          </span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
+          Architecting Enterprise <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300">Data Lakes, GraphRAG & AI Solutions</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mb-8">
+          4 years of specialized engineering excellence architecting master cloud traceability data lakes on Google BigQuery (500k+ entities across 400+ vehicle projects), zero-hallucination GenAI knowledge bases, automated AI test case generation microservices, and real-time 60 fps automotive bench computer vision with CANoe integration.
+        </p>
+
+        <!-- CTAs & Social Links -->
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="Ranjith_Palani_Senior_Resume.pdf" download class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>Download Senior Resume (PDF)</span>
+          </a>
+          <a href="#gallery" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-blue-600/20 to-indigo-600/20 hover:from-blue-600/30 hover:to-indigo-600/30 text-blue-300 border border-blue-500/40 font-semibold text-sm transition-all">
+            <i data-lucide="image" class="w-4 h-4 text-blue-400"></i>
+            <span>View Production Evidence Gallery</span>
+          </a>
+          <button onclick="copyEmail()" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-sm font-medium transition-all group">
+            <i data-lucide="copy" class="w-4 h-4 text-slate-400 group-hover:text-blue-400"></i>
+            <span id="copy-btn-text">Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Links Bar -->
+        <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400">
+          <button onclick="copyEmail()" class="inline-flex items-center gap-1.5 hover:text-blue-400 text-slate-300 transition-colors cursor-pointer" title="Click to copy email">
+            <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i>
+            <span>ranjith.palani.jobseeker@gmail.com</span>
+          </button>
+          <a href="https://linkedin.com/in/ranjithp18" target="_blank" class="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+            <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> linkedin.com/in/ranjithp18
+          </a>
+          <a href="https://github.com/Ranjithp1" target="_blank" class="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+            <i data-lucide="github" class="w-4 h-4 text-blue-400"></i> github.com/Ranjithp1
+          </a>
+          <span class="inline-flex items-center gap-1.5 text-slate-400">
+            <i data-lucide="map-pin" class="w-4 h-4 text-rose-400"></i> Global Delivery: Chennai GTC ⟷ Prague R&D Center (Europe)
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metric Highlights Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center hover:border-blue-500/30 transition-all">
+        <div class="text-2xl sm:text-3xl font-extrabold text-blue-400 mb-1">500K+</div>
+        <div class="text-xs text-slate-400 font-medium">Entities Unified in BigQuery</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center hover:border-emerald-500/30 transition-all">
+        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mb-1">35%+</div>
+        <div class="text-xs text-slate-400 font-medium">GCP FinOps Cost Saved</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center hover:border-purple-500/30 transition-all">
+        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 mb-1">400+</div>
+        <div class="text-xs text-slate-400 font-medium">Vehicle Projects Tracked</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center hover:border-cyan-500/30 transition-all">
+        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 mb-1">70%</div>
+        <div class="text-xs text-slate-400 font-medium">ETL Pipeline Speedup</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center hover:border-amber-500/30 transition-all">
+        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 mb-1">60 FPS</div>
+        <div class="text-xs text-slate-400 font-medium">Bench CV LED Tracking</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 text-center hover:border-rose-500/30 transition-all">
+        <div class="text-2xl sm:text-3xl font-extrabold text-rose-400 mb-1">2 Missions</div>
+        <div class="text-xs text-slate-400 font-medium">On-Site Prague R&D</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- NEW: VISUAL EVIDENCE & PRODUCTION GALLERY ("PICTURES SPEAK 1000 WORDS")   -->
+  <!-- ========================================================================= -->
+  <section id="gallery" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="p-8 sm:p-12 rounded-3xl bg-slate-900/80 border border-blue-500/30 relative overflow-hidden shadow-2xl">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3">
+            <i data-lucide="camera" class="w-3.5 h-3.5"></i>
+            Verifiable Engineering Evidence
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Systems Architecture & Visual Evidence Gallery
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 mt-2 max-w-2xl">
+            "A picture speaks a thousand words." High-definition architectural schematics, hardware-in-the-loop bench rigs, autonomous multi-agent AI pipelines, and executive V-Cycle dashboards.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Buttons -->
+        <div class="flex flex-wrap gap-2" id="gallery-filters">
+          <button onclick="filterGallery('all')" class="gallery-filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-all">All Systems (15)</button>
+          <button onclick="filterGallery('bench')" class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Test Benches & Vision</button>
+          <button onclick="filterGallery('agent')" class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Multi-Agent AI</button>
+          <button onclick="filterGallery('dashboard')" class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Executive Dashboards</button>
+          <button onclick="filterGallery('cloud')" class="gallery-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Cloud Architecture</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+
+        <!-- Item 1: V-Cycle One-Pager -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-blue-500/50 transition-all" data-gallery-cat="dashboard" onclick="openLightboxIndex(0)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/vcycle_onepager_dashboard.jpg" alt="Automotive V-Cycle One Pager Dashboard" class="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-blue-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-600/90 text-white">Looker Studio BI</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Automotive V-Cycle Executive One-Pager</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">417k+ Stakeholder Reqs, 242k+ System Specs, and 384k+ Test Executions mapped across V-Cycle stages with real-time pass rates.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Physical Test Bench Setup -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-cyan-500/50 transition-all" data-gallery-cat="bench" onclick="openLightboxIndex(1)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/bench_ipc_camera_cluster.jpg" alt="Physical IPC Camera Bench Setup" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-cyan-600/90 text-white">Physical Test Bench</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Physical Camera & Cluster Testing Rig</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Hardware validation camera mounted facing digital instrument panel for automated HMI speed, brake, and warning validation.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Honda Dome Ambient LED CV with CANoe -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-cyan-500/50 transition-all" data-gallery-cat="bench" onclick="openLightboxIndex(2)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/honda_dome_canoe_led_cv.jpg" alt="Honda Dome Ambient Lighting CANoe Integration" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-600/90 text-white">CANoe + Computer Vision</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Honda Dome Ambient LED & CANoe Integration</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Python base64 camera extraction piped to Gemini AI & Vector CANoe VN1630A for automated color and frequency testing.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: AI OCR vs Traditional OCR -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-purple-500/50 transition-all" data-gallery-cat="bench" onclick="openLightboxIndex(3)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/ai_ocr_traditional_vs_multimodal.jpg" alt="Traditional vs AI-based OCR" class="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-purple-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-600/90 text-white">Multimodal Vision</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Multimodal Vision vs Traditional OCR</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Anti-substitution benchmarks: Eliminating character swaps between 0/O, 1/I, and verifying foreign characters (German umlauts).</p>
+          </div>
+        </div>
+
+        <!-- Item 5: AI Agents CI/CD Workflow -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-emerald-500/50 transition-all" data-gallery-cat="agent" onclick="openLightboxIndex(4)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/ai_agents_cicd_pipeline.jpg" alt="AI Agents CI/CD Pipeline" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-emerald-600/90 text-white">CI/CD AI Agents</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Automated AI Agent CI/CD Pipeline</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Day 1 requirements ingestion -> Midnight AI Agent Crew execution -> Day 2 verified test cases delivered to engineers.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: AI Test Case Generation Design -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-emerald-500/50 transition-all" data-gallery-cat="agent" onclick="openLightboxIndex(5)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/ai_testcase_agent_design.jpg" alt="AI Test Case Agent Design" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-emerald-600/90 text-white">Agentic Architecture</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Dual-Agent Generator & Quality Critic</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Collaborative loop between AI Test Engineer and AI Quality Critic generating test steps, expectations, and CAN bindings for AEB & ACC.</p>
+          </div>
+        </div>
+
+        <!-- Item 7: Multi-Agent Crew Roles -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-emerald-500/50 transition-all" data-gallery-cat="agent" onclick="openLightboxIndex(6)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/ai_multiagent_crew_roles.jpg" alt="Multi-Agent Crew Roles" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-emerald-600/90 text-white">Crew Hierarchy</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Specialized Multi-Agent Crew Topology</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Modular AI agents: System Architect, Test Automation Lead, Data Extractor, Reviewer, and Bench Test Validator.</p>
+          </div>
+        </div>
+
+        <!-- Item 8: Agentic Crews & Qdrant Vector Storage -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-emerald-500/50 transition-all" data-gallery-cat="agent" onclick="openLightboxIndex(7)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/agentic_crews_qdrant_kb.jpg" alt="Agentic Crews and Qdrant KB" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-600/90 text-white">Qdrant Vector DB</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Crew 2: Knowledge Base to Qdrant Storage</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">System requirements and DBC CAN signal definitions ingested and vectorized into Qdrant for semantic search retrieval.</p>
+          </div>
+        </div>
+
+        <!-- Item 9: AI WebApp Interface -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-emerald-500/50 transition-all" data-gallery-cat="agent" onclick="openLightboxIndex(8)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/ai_platform_webapp_ui.jpg" alt="AI Platform WebApp UI" class="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-blue-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-600/90 text-white">Full-Stack WebApp</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">AI Test Generation Platform WebApp</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Production web application UI managing project profiles, automated test script dispatchers, and knowledge base sync.</p>
+          </div>
+        </div>
+
+        <!-- Item 10: Launch Readiness Review Live UI -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-amber-500/50 transition-all" data-gallery-cat="dashboard" onclick="openLightboxIndex(9)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/lrr_production_dashboard.jpg" alt="LRR Live Production Dashboard" class="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-amber-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-amber-600/90 text-white">LRR Production UI</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Launch Readiness Review (LRR) Live WebApp</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Executive release gatekeeper: 91.7% Testing Readiness, Global Concurrency Freeze / Unfreeze buttons, and multi-tier project tables.</p>
+          </div>
+        </div>
+
+        <!-- Item 11: LRR Wide Table View -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-amber-500/50 transition-all" data-gallery-cat="dashboard" onclick="openLightboxIndex(10)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/lrr_wide_view.jpg" alt="LRR Wide Project Review View" class="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-amber-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-amber-600/90 text-white">Governance WebApp</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">LRR Concurrency & Freeze Table</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Granular project freeze controls, milestone tracking (PRKF, SSSR, AFV, EFV), and live validation pass percentages.</p>
+          </div>
+        </div>
+
+        <!-- Item 12: BigQuery Graph Architecture -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-purple-500/50 transition-all" data-gallery-cat="cloud" onclick="openLightboxIndex(11)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/bigquery_graph_architecture.jpg" alt="BigQuery Graph & Knowledge Graph" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-purple-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-600/90 text-white">BigQuery GraphRAG</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">BigQuery Property Graph Architecture</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Query plan execution and directed edge relational CTEs for automotive ISO 26262 knowledge graph search.</p>
+          </div>
+        </div>
+
+        <!-- Item 13: Enterprise Cloud Data Platform Context View -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-blue-500/50 transition-all" data-gallery-cat="cloud" onclick="openLightboxIndex(12)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/data_platform_context_view.jpg" alt="Data Platform Context View on IcePanel" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-blue-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-600/90 text-white">Enterprise Topology</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Enterprise Data Platform Context View</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Complete architecture topology: DOORS, CoreALM, CodeBeamer, TIBCO, BigQuery, Looker Studio, and PM AI Agents.</p>
+          </div>
+        </div>
+
+        <!-- Item 14: Data Platform App Diagram -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-blue-500/50 transition-all" data-gallery-cat="cloud" onclick="openLightboxIndex(13)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/data_platform_app_diagram.jpg" alt="Data Platform App Diagram" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-blue-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-600/90 text-white">ETL Pipeline Map</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Data Platform Application Diagram</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Detailed mapping of Bug Escape pipelines, MDM data governance, requirements consolidation, and CI pipelines.</p>
+          </div>
+        </div>
+
+        <!-- Item 15: Data Platform Pipeline Flow -->
+        <div class="gallery-item rounded-2xl bg-slate-950/90 border border-slate-800 overflow-hidden group cursor-pointer hover:border-blue-500/50 transition-all" data-gallery-cat="cloud" onclick="openLightboxIndex(14)">
+          <div class="relative h-52 overflow-hidden bg-slate-900">
+            <img src="assets/images/data_platform_pipeline_flow.jpg" alt="Data Platform Pipeline Flow" class="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3 py-1.5 rounded-lg bg-blue-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i> Inspect Full Size
+              </span>
+            </div>
+            <span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-blue-600/90 text-white">Data Orchestration</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-sm font-bold text-white mb-1">Pipeline Orchestration & Execution Flow</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Budget tracking pipelines, STR analytics, and executive dashboard connectors deployed across Google Cloud.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Automotive V-Cycle Explanation Section -->
+  <section id="vcycle" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="p-8 sm:p-12 rounded-3xl bg-slate-900/80 border border-slate-800 shadow-xl">
+      <div class="max-w-3xl mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3">
+          <i data-lucide="git-merge" class="w-3.5 h-3.5"></i>
+          Automotive Engineering Standard
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">The Automotive V-Cycle Traceability Model</h2>
+        <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+          In automotive software engineering (ISO 26262 / ASPICE), system development and system validation form a synchronized "V". My master traceability data warehouse unifies all phases horizontally and vertically across 400+ projects:
+        </p>
+      </div>
+
+      <!-- V-Cycle Diagram -->
+      <div class="bg-slate-950/80 rounded-xl p-4 sm:p-6 border border-slate-800 mb-6 overflow-x-auto">
+        <pre class="mermaid">
+flowchart TD
+  subgraph LeftSide ["Specification & Design (Left Wing)"]
+    L1["1. Customer / Stakeholder Goals<br/>(L10 Requirements - 417k+)"]
+    L2["2. System Requirements Specification<br/>(L20 Requirements - 242k+)"]
+    L3["3. System Architecture & Signals<br/>(CAN / Ethernet DBC Matrices)"]
+  end
+  subgraph RightSide ["Verification & Validation (Right Wing)"]
+    R1["6. Vehicle Acceptance & Release<br/>(Launch Readiness Review / LRR)"]
+    R2["5. System Validation & Defect Escape<br/>(L23 Test Executions - 384k+)"]
+    R3["4. Automated Test Benches<br/>(CANoe HIL / OpenCV 60fps)"]
+  end
+  L1 -. Horizontal Traceability .-> R1
+  L2 -. Horizontal Traceability .-> R2
+  L3 -. Horizontal Traceability .-> R3
+  L1 --> L2 --> L3 --> R3 --> R2 --> R1
+        </pre>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+          <span class="font-bold text-blue-400 block mb-1">Horizontal Traceability:</span>
+          Connecting specification elements directly with corresponding test execution criteria (e.g. verifying that an ASIL-B lane-keeping requirement has passing HIL test cases with zero defect escapes).
+        </div>
+        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+          <span class="font-bold text-indigo-400 block mb-1">Vertical Traceability:</span>
+          Mapping high-level OEM customer targets down through functional specifications to low-level CAN signals, ensuring 100% requirements coverage without missing test permutations.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flagship Systems & Architectural Deep-Dives -->
+  <section id="systems" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+      <div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">Flagship Systems & Architecture</h2>
+        <p class="text-sm sm:text-base text-slate-400 mt-1">Detailed system design, data flows, and engineering outcomes across production systems.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-2" id="filter-container">
+        <button onclick="filterProjects('all')" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-all">All</button>
+        <button onclick="filterProjects('ai')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">GenAI & Vision</button>
+        <button onclick="filterProjects('cloud')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Data Lakes & FinOps</button>
+        <button onclick="filterProjects('lrr')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Governance & WebApps</button>
+      </div>
+    </div>
+
+    <!-- Systems Cards Grid -->
+    <div class="space-y-8" id="projects-list">
+
+      <!-- System 1: Master Traceability Data Warehouse -->
+      <div class="project-card rounded-2xl bg-slate-900/70 border border-slate-800 p-6 sm:p-8 hover:border-blue-500/40 transition-all" data-category="cloud">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-blue-400"></span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Master Traceability Cloud Data Warehouse & C-Suite BI Platform</h3>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Production Backbone</span>
+        </div>
+
+        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+          Centralized <strong>500,000+ live entities across 400+ automotive projects</strong> and 8 autonomous vehicle subsystems (Detection, Perception Vision, Radar, Ultrasonic Sensors, Surround View, Long-Range Cameras, Communication, Gateway/Decision). Engineered the division's official C-Suite reporting platform and created advanced BigQuery SQL CTEs with dynamic conditional validation logic—evaluating test execution states before defect checks to eliminate false-negative quality penalties.
+        </p>
+
+        <!-- Live Visual Preview of Production Dashboard -->
+        <div class="mb-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+          <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+            <span class="font-semibold text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="image" class="w-3.5 h-3.5 text-blue-400"></i> Production Looker Studio One-Pager Dashboard
+            </span>
+            <span class="text-blue-400 hover:underline cursor-pointer" onclick="openLightboxIndex(0)">Click to expand</span>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-800" onclick="openLightboxIndex(0)">
+            <img src="assets/images/vcycle_onepager_dashboard.jpg" alt="V-Cycle One-Pager Dashboard" class="w-full h-64 sm:h-80 object-cover object-top group-hover:scale-102 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-4">
+              <div class="text-xs text-slate-200">
+                <span class="font-bold text-white block">One Pager Status View (Looker Studio)</span>
+                <span class="text-slate-400">Synchronizing 417k+ StRS, 242k+ SyRS, 384k+ SysTest, and 205k+ tickets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Pills & Metrics -->
+        <div class="flex flex-wrap items-center justify-between pt-4 border-t border-slate-800 gap-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Google BigQuery</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Looker Studio</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Python ETL Engine</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">IBM DOORS OSLC</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">CodeBeamer</span>
+          </div>
+          <div class="text-xs text-blue-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> 100% Data Fidelity & Zero 'Unmapped' Discrepancies Across All Global Sites
+          </div>
+        </div>
+      </div>
+
+      <!-- System 2: BigQuery GraphRAG & Vertex AI Knowledge Base -->
+      <div class="project-card rounded-2xl bg-slate-900/70 border border-slate-800 p-6 sm:p-8 hover:border-purple-500/40 transition-all" data-category="ai">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-purple-400"></span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">BigQuery GraphRAG & Vertex AI Automotive Knowledge Base</h3>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">AI & RAG Innovation</span>
+        </div>
+
+        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+          Engineered an enterprise GraphRAG architecture directly inside Google Cloud BigQuery. Modeled 8,500+ DOORS specification modules into mathematical graph nodes and directed dependency edges (<code class="text-purple-300">verifies</code>, <code class="text-purple-300">derives_from</code>), eliminating hallucinations and enabling deterministic, fully cited natural-language queries for Vertex AI LLMs.
+        </p>
+
+        <!-- Visual Preview: BigQuery Graph Architecture -->
+        <div class="mb-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+          <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+            <span class="font-semibold text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="image" class="w-3.5 h-3.5 text-purple-400"></i> BigQuery Property Graph & Execution Plan Architecture
+            </span>
+            <span class="text-purple-400 hover:underline cursor-pointer" onclick="openLightboxIndex(11)">Click to expand</span>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-800" onclick="openLightboxIndex(11)">
+            <img src="assets/images/bigquery_graph_architecture.jpg" alt="BigQuery Graph & Knowledge Graph" class="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-102 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-4">
+              <div class="text-xs text-slate-200">
+                <span class="font-bold text-white block">BigQuery Knowledge Graph Traversal</span>
+                <span class="text-slate-400">Graph database schema, node-edge indexing, and recursive query plans</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between pt-4 border-t border-slate-800 gap-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Google Vertex AI</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">GraphRAG in BigQuery</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Qdrant Vector DB</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Text Embeddings</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">FastAPI</span>
+          </div>
+          <div class="text-xs text-purple-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i> Zero-Hallucination Deterministic Traceability
+          </div>
+        </div>
+      </div>
+
+      <!-- System 3: Automated AI Test Case Generation Platform -->
+      <div class="project-card rounded-2xl bg-slate-900/70 border border-slate-800 p-6 sm:p-8 hover:border-emerald-500/40 transition-all" data-category="ai">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Automated AI Test Case Generation Platform & Cloud Microservices</h3>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Velocity Multiplier</span>
+        </div>
+
+        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+          Architected an AI-driven automated test generation microservice using FastAPI on Google Cloud Run, Qdrant vector database, and BigQuery. Ingests raw stakeholder requirements from the ETL pipeline, enriches them with CAN signal mappings from DBC files, and coordinates a multi-agent crew to auto-generate system test cases—<strong>slashing manual test authoring time by 40%+</strong> and accelerating sprint delivery across teams.
+        </p>
+
+        <!-- Visual Multi-Agent Gallery Strip -->
+        <div class="mb-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+          <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+            <span class="font-semibold text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-emerald-400"></i> Multi-Agent Architecture & CI/CD Pipeline Artifacts
+            </span>
+            <span class="text-emerald-400">Click any card to inspect</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="rounded-lg overflow-hidden border border-slate-800 cursor-pointer group" onclick="openLightboxIndex(4)">
+              <img src="assets/images/ai_agents_cicd_pipeline.jpg" class="h-32 w-full object-cover group-hover:scale-105 transition-all">
+              <div class="p-2 bg-slate-900/90 text-[11px] font-medium text-slate-300">1. AI Agent CI/CD Pipeline</div>
+            </div>
+            <div class="rounded-lg overflow-hidden border border-slate-800 cursor-pointer group" onclick="openLightboxIndex(5)">
+              <img src="assets/images/ai_testcase_agent_design.jpg" class="h-32 w-full object-cover group-hover:scale-105 transition-all">
+              <div class="p-2 bg-slate-900/90 text-[11px] font-medium text-slate-300">2. Dual Agent Workflow</div>
+            </div>
+            <div class="rounded-lg overflow-hidden border border-slate-800 cursor-pointer group" onclick="openLightboxIndex(8)">
+              <img src="assets/images/ai_platform_webapp_ui.jpg" class="h-32 w-full object-cover object-top group-hover:scale-105 transition-all">
+              <div class="p-2 bg-slate-900/90 text-[11px] font-medium text-slate-300">3. Production WebApp UI</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between pt-4 border-t border-slate-800 gap-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">FastAPI</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Google Cloud Run</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Vector Embeddings</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">DBC CAN Signal Mapping</span>
+          </div>
+          <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="zap" class="w-4 h-4 text-emerald-400"></i> 40%+ Acceleration in Test Case Authoring
+          </div>
+        </div>
+      </div>
+
+      <!-- System 4: Real-Time Bench CV & Multimodal Vision -->
+      <div class="project-card rounded-2xl bg-slate-900/70 border border-slate-800 p-6 sm:p-8 hover:border-cyan-500/40 transition-all" data-category="ai">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-cyan-400"></span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Automotive Bench Computer Vision & Multimodal OCR Suite</h3>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Edge Vision & Automation</span>
+        </div>
+
+        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+          Built two edge vision systems: (1) A real-time <strong>OpenCV 60 fps temporal tracking</strong> harness validating physical instrument cluster LEDs, verifying HSV color boundaries and high-frequency blinking cycles, piped into Vector CANoe CAPL test cases via a custom Python TCP socket server. (2) A zero-dependency compiled Windows application leveraging Vertex AI Multimodal Vision with strict anti-substitution prompts to automate ECU hardware serial number identification during ISO 26262 bench testing setup.
+        </p>
+
+        <!-- Visual Bench Test Photos -->
+        <div class="mb-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+          <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+            <span class="font-semibold text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="camera" class="w-3.5 h-3.5 text-cyan-400"></i> Physical Automotive Bench Hardware & Validation Rig
+            </span>
+            <span class="text-cyan-400">Click any card to inspect</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="rounded-lg overflow-hidden border border-slate-800 cursor-pointer group" onclick="openLightboxIndex(1)">
+              <img src="assets/images/bench_ipc_camera_cluster.jpg" class="h-32 w-full object-cover group-hover:scale-105 transition-all">
+              <div class="p-2 bg-slate-900/90 text-[11px] font-medium text-slate-300">1. Physical Camera & Cluster Rig</div>
+            </div>
+            <div class="rounded-lg overflow-hidden border border-slate-800 cursor-pointer group" onclick="openLightboxIndex(2)">
+              <img src="assets/images/honda_dome_canoe_led_cv.jpg" class="h-32 w-full object-cover group-hover:scale-105 transition-all">
+              <div class="p-2 bg-slate-900/90 text-[11px] font-medium text-slate-300">2. Ambient LED + CANoe Flow</div>
+            </div>
+            <div class="rounded-lg overflow-hidden border border-slate-800 cursor-pointer group" onclick="openLightboxIndex(3)">
+              <img src="assets/images/ai_ocr_traditional_vs_multimodal.jpg" class="h-32 w-full object-cover object-top group-hover:scale-105 transition-all">
+              <div class="p-2 bg-slate-900/90 text-[11px] font-medium text-slate-300">3. Multimodal OCR Benchmark</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between pt-4 border-t border-slate-800 gap-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">OpenCV (60 fps)</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Vector CANoe CAPL</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">TCP/IP Socket Server</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Vertex AI Multimodal Vision</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">PyInstaller</span>
+          </div>
+          <div class="text-xs text-cyan-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="gauge" class="w-4 h-4 text-cyan-400"></i> Automated 100% of Physical Bench LED Verification
+          </div>
+        </div>
+      </div>
+
+      <!-- System 5: LRR Full-Stack Governance WebApp -->
+      <div class="project-card rounded-2xl bg-slate-900/70 border border-slate-800 p-6 sm:p-8 hover:border-amber-500/40 transition-all" data-category="lrr">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Launch Readiness Review (LRR) Full-Stack Governance WebApp</h3>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Release Gatekeeper</span>
+        </div>
+
+        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+          Developed a full-stack governance web application using Google Apps Script (HTML5/JavaScript frontend and modular GAS backend) integrated with BigQuery. Architected multi-user optimistic concurrency control with version-token validation and an automated database freeze mechanism eliminating state clobbering across concurrent TPM edits.
+        </p>
+
+        <!-- Visual LRR Preview -->
+        <div class="mb-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+          <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+            <span class="font-semibold text-slate-200 flex items-center gap-1.5">
+              <i data-lucide="image" class="w-3.5 h-3.5 text-amber-400"></i> Live Production LRR WebApp (Showing Concurrency Freeze Engine)
+            </span>
+            <span class="text-amber-400 hover:underline cursor-pointer" onclick="openLightboxIndex(9)">Click to expand</span>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-800" onclick="openLightboxIndex(9)">
+            <img src="assets/images/lrr_production_dashboard.jpg" alt="LRR Live Production WebApp" class="w-full h-64 sm:h-72 object-cover object-top group-hover:scale-102 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end p-4">
+              <div class="text-xs text-slate-200">
+                <span class="font-bold text-white block">LRR Gatekeeper Platform</span>
+                <span class="text-slate-400">Global Freeze/Unfreeze state locks, Testing Readiness: 91.7%, SystemReq Pass Rate: 82.4%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between pt-4 border-t border-slate-800 gap-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Google Apps Script WebApp</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Optimistic DB Locking</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Jenkins CI/CD</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono">Selenium Bot</span>
+          </div>
+          <div class="text-xs text-amber-400 font-semibold flex items-center gap-1.5">
+            <i data-lucide="shield" class="w-4 h-4 text-amber-400"></i> Zero Write Collisions Across 50+ TPMs
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Microservices & Container Architecture -->
+  <section id="docker-guide" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="p-8 sm:p-12 rounded-3xl bg-slate-900/90 border border-blue-500/30">
+      <div class="max-w-3xl mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3">
+          <i data-lucide="box" class="w-3.5 h-3.5"></i>
+          Microservice & Container Architecture
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Containerized Microservices on Google Cloud Run</h2>
+        <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+          Standardizing distributed FastAPI microservices and AI inference engines into lightweight, immutable container images optimized for sub-second cold starts, dynamic port binding, and high-concurrency request packing:
+        </p>
+      </div>
+
+      <!-- Docker Architecture Breakdown -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="p-5 rounded-2xl bg-slate-950/80 border border-slate-800">
+          <span class="text-xs font-mono font-bold text-blue-400 block mb-2">// Production Multi-Stage Container Pattern for FastAPI & Cloud Run</span>
+          <pre class="text-xs text-slate-300 font-mono bg-slate-900/80 p-4 rounded-lg overflow-x-auto leading-relaxed">
+# 1. Lightweight Base Image
+FROM python:3.11-slim
+
+# 2. Prevent Python writing pyc files & buffer stdout (Cloud Logging)
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=8080
+
+WORKDIR /app
+
+# 3. Layer caching: install dependencies before copying source
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 4. Copy application source
+COPY . .
+
+# 5. Run with high-concurrency Uvicorn on Cloud Run dynamic $PORT
+CMD exec uvicorn main:app --host 0.0.0.0 --port ${PORT} --workers 2</pre>
+        </div>
+
+        <div class="space-y-4">
+          <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+            <span class="font-bold text-white text-sm block mb-1">Zero Environmental Drift & C-Library Isolation:</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Google Cloud Run executes containerized workloads serverlessly. Packaging our FastAPI services, Qdrant vector client, and specialized C-extensions into container images eliminated local vs. cloud runtime disparities, guaranteeing identical execution from local staging to production.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+            <span class="font-bold text-white text-sm block mb-1">High-Concurrency Auto-Packing & FinOps ROI:</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Tuned container worker threads and container concurrency limits (handling up to 80 concurrent connections per container instance) to maximize resource density. Cloud Run scales to zero during idle periods and spins up instances in milliseconds, slashing compute billing by 35%+.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive GCP FinOps & Cost Optimization Section -->
+  <section id="finops" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900/80 to-slate-950 border border-emerald-500/30 relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+            <i data-lucide="badge-dollar-sign" class="w-3.5 h-3.5"></i>
+            Cloud FinOps Architecture
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+            Cutting GCP Cloud Billing by <span class="text-emerald-400">35%+</span>
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+            As transversal Technical SME across organizational initiatives, I restructured data models and container autoscaling to optimize Google Cloud resource consumption without compromising sub-second analytics latency.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <div class="font-bold text-white mb-1 flex items-center gap-1.5">
+                <i data-lucide="database" class="w-3.5 h-3.5 text-blue-400"></i> BigQuery Partitioning & Clustering
+              </div>
+              <p class="text-slate-400">Enforced day-partitioning and cluster keys, eliminating full-table scans across 3 TB+ telemetry logs.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <div class="font-bold text-white mb-1 flex items-center gap-1.5">
+                <i data-lucide="server" class="w-3.5 h-3.5 text-emerald-400"></i> Cloud Run Concurrency Tuning
+              </div>
+              <p class="text-slate-400">Rightsized container CPU allocation, memory limits, and request concurrency to maximize packing factor.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Cost Calculator Widget -->
+        <div class="w-full lg:w-96 p-6 rounded-2xl bg-slate-950/90 border border-slate-800 shadow-xl">
+          <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-4 flex items-center justify-between">
+            <span>FinOps Impact Simulator</span>
+            <span class="text-emerald-400 font-bold">-37.5%</span>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs mb-1.5">
+                <span class="text-slate-300 font-medium">Monthly BigQuery Scanned TB</span>
+                <span class="text-blue-400 font-bold" id="tb-label">45 TB</span>
+              </div>
+              <input type="range" min="10" max="150" value="45" class="w-full accent-blue-500 cursor-pointer" id="tb-slider" oninput="updateFinOps()">
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 space-y-2 text-xs">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Legacy Cost (Full Scan):</span>
+                <span class="text-slate-300 font-mono" id="legacy-cost">$225 / mo</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-emerald-400 font-semibold">Optimized Cost (Partitioned):</span>
+                <span class="text-emerald-400 font-mono font-bold" id="optimized-cost">$140 / mo</span>
+              </div>
+              <div class="flex justify-between pt-2 border-t border-slate-800/80 font-bold">
+                <span class="text-white">Annual Cloud Savings:</span>
+                <span class="text-emerald-400 font-mono text-sm" id="annual-savings">$1,020 / yr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prague Global Missions Timeline -->
+  <section id="prague" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="mb-10 text-center max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-3">
+        <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+        Cross-Site Global Leadership
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+        Dual On-Site Missions to Prague R&D Center
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 mt-2">
+        Selected by Division Executive Leadership as the sole technical specialist representing Chennai GTC for international on-site deployments to the Czech Republic.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Mission 1 -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/30 transition-all">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider">Mission 1 • February 2026</span>
+          <span class="px-2.5 py-0.5 rounded-full text-xs bg-slate-800 text-slate-300">Prague R&D</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Architecture & Tooling Roadmap Alignment</h3>
+        <p class="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
+          Convened with European System Validation leadership to establish the 2026 tooling roadmap, architect data pipelines for DOORS-to-CodeBeamer migration, and standardize cross-project reporting.
+        </p>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-purple-400 mt-0.5"></i> CodeBeamer REST API & BigQuery ingestion architecture.
+          </li>
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-purple-400 mt-0.5"></i> Automated project provisioning and schema instantiation.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mission 2 -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/30 transition-all">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">Mission 2 • Sep – Oct 2026</span>
+          <span class="px-2.5 py-0.5 rounded-full text-xs bg-slate-800 text-slate-300">Prague Gemba</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Executive Reporting & Cross-Site Coaching</h3>
+        <p class="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
+          High-stakes deployment during major automotive release milestones. Sat side-by-side with European Test Leads in the gemba to resolve data gaps, coach teams on V-Cycle reporting, and deploy the AI test case generation tool.
+        </p>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 mt-0.5"></i> Direct face-to-face coaching for European test leads across multiple projects.
+          </li>
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 mt-0.5"></i> Deployed C-Suite Looker view used in weekly Director reviews.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Technical Stack -->
+  <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+    <div class="mb-8">
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">Core Technical Competencies</h2>
+      <p class="text-sm sm:text-base text-slate-400 mt-1">Specialized toolchain and engineering disciplines across production systems.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="font-bold text-white text-base mb-3 flex items-center gap-2">
+          <i data-lucide="bot" class="w-4 h-4 text-purple-400"></i> AI & Generative AI
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed mb-3">GraphRAG, Knowledge Graphs, Google Cloud Vertex AI, Large Language Models (LLMs), Multimodal Vision, Qdrant Vector DB, Text Embeddings, Prompt Engineering, Scikit-learn, CNNs.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="font-bold text-white text-base mb-3 flex items-center gap-2">
+          <i data-lucide="eye" class="w-4 h-4 text-cyan-400"></i> Computer Vision & Hardware
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed mb-3">OpenCV (HSV color segmentation, 60 fps temporal tracking), pyzbar, Vector CANoe Integration, Python TCP/IP socket servers, CAPL test automation, Bench camera telemetry.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="font-bold text-white text-base mb-3 flex items-center gap-2">
+          <i data-lucide="cloud" class="w-4 h-4 text-blue-400"></i> Cloud & FinOps
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed mb-3">Google Cloud Platform (GCP), BigQuery (Partitioning, Clustering, Analytical CTEs), Google Cloud Run (FastAPI Microservices, Concurrency & Scaling), Ingestion Pipelines (ETL/ELT), REST/OSLC APIs.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="font-bold text-white text-base mb-3 flex items-center gap-2">
+          <i data-lucide="terminal" class="w-4 h-4 text-amber-400"></i> DevOps & Automation
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed mb-3">Jenkins CI/CD (Multi-Node Distributed Farm, Groovy Pipelines), Selenium, Python (FastAPI, PyInstaller, Loguru), Git/GitHub, Windows automation.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="font-bold text-white text-base mb-3 flex items-center gap-2">
+          <i data-lucide="bar-chart-2" class="w-4 h-4 text-emerald-400"></i> Executive BI & Analytics
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed mb-3">Looker Studio (C-Suite Governance, 5-Tier Attribute Dashboards), Power BI (Basics), Advanced SQL (Window Functions, Conditional Compliance Modeling), Google Workspace APIs.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="font-bold text-white text-base mb-3 flex items-center gap-2">
+          <i data-lucide="users" class="w-4 h-4 text-rose-400"></i> Leadership & Standards
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed mb-3">Functional Team Leadership (3 engineers), Cross-Project Technical SME, Cross-Site International Delivery (Prague Gemba), Automotive V-Cycle, ASIL-B Safety Standards, ISO 26262.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center text-xs text-slate-500">
+    <div class="flex flex-wrap justify-center gap-6 mb-4 text-slate-400 font-medium">
+      <a href="Ranjith_Palani_Senior_Resume.pdf" download class="hover:text-blue-400">Resume PDF</a>
+      <a href="Ranjith_Palani_Senior_Resume.docx" download class="hover:text-blue-400">Resume Word (.docx)</a>
+      <a href="https://linkedin.com/in/ranjithp18" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+      <a href="https://github.com/Ranjithp1" target="_blank" class="hover:text-blue-400">GitHub</a>
+      <button onclick="copyEmail()" class="hover:text-blue-400 cursor-pointer flex items-center gap-1">
+        <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i>
+        <span>ranjith.palani.jobseeker@gmail.com</span>
+      </button>
+    </div>
+    <p>© 2026 Ranjith Palani M. Designed for Senior Engineering Portfolio & Architectural Review.</p>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- FULLSCREEN INTERACTIVE LIGHTBOX MODAL                                     -->
+  <!-- ========================================================================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-8 transition-all duration-300 opacity-0 pointer-events-none">
+    <div class="relative max-w-5xl w-full bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh]">
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-5 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+        <div class="flex items-center gap-3">
+          <span id="lightbox-badge" class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">Category</span>
+          <h3 id="lightbox-title" class="text-base sm:text-lg font-bold text-white truncate max-w-md sm:max-w-xl">Artifact Title</h3>
+        </div>
+        <button onclick="closeLightbox()" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-all cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Image Viewport -->
+      <div class="relative flex-1 bg-black/60 flex items-center justify-center p-2 sm:p-6 overflow-hidden">
+        <img id="lightbox-img" src="" alt="Artifact Full View" class="max-h-[60vh] sm:max-h-[66vh] max-w-full object-contain rounded-lg shadow-xl">
+        
+        <!-- Prev / Next Nav Buttons -->
+        <button onclick="prevLightbox(event)" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-blue-600 border border-slate-700 text-white flex items-center justify-center transition-all shadow-lg cursor-pointer">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <button onclick="nextLightbox(event)" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-blue-600 border border-slate-700 text-white flex items-center justify-center transition-all shadow-lg cursor-pointer">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Footer Caption -->
+      <div class="p-4 sm:p-5 border-t border-slate-800 bg-slate-950/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <p id="lightbox-desc" class="text-slate-300 leading-relaxed max-w-3xl">Detailed technical narrative and verifiable business value.</p>
+        <div class="text-slate-400 font-mono text-[11px] whitespace-nowrap" id="lightbox-counter">1 of 15</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white text-xs font-semibold shadow-2xl flex items-center gap-2">
+    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        darkMode: true,
+        background: '#090d16',
+        primaryColor: '#1e3a8a',
+        primaryTextColor: '#f8fafc',
+        primaryBorderColor: '#3b82f6',
+        lineColor: '#60a5fa',
+        secondaryColor: '#312e81',
+        tertiaryColor: '#0f172a'
+      }
+    });
+
+    // Master Artifact Registry for Lightbox
+    const artifacts = [
+      {
+        src: "assets/images/vcycle_onepager_dashboard.jpg",
+        badge: "Executive Looker Studio BI",
+        title: "Master Automotive V-Cycle One-Pager Status Dashboard",
+        desc: "Looker Studio executive governance dashboard integrating 417k+ Stakeholder Requirements (10 StRS), 242k+ System Specifications (20 SyRS), 384k+ System Test Executions (23 SysTest), and 205k+ defect tickets with automated convergence metrics."
+      },
+      {
+        src: "assets/images/bench_ipc_camera_cluster.jpg",
+        badge: "Physical Automotive Test Bench",
+        title: "Physical Camera & Digital Instrument Cluster Rig",
+        desc: "Hardware validation camera mounted directly facing the digital instrument cluster panel for automated real-time HMI testing (validating brake warnings, speed displays, tire pressure indicators, and telltales)."
+      },
+      {
+        src: "assets/images/honda_dome_canoe_led_cv.jpg",
+        badge: "Vector CANoe + Computer Vision",
+        title: "Honda Dome Ambient LED Testing & CANoe Loop",
+        desc: "Bench camera captures ambient LED strips, converts frames to base64, triggers Gemini AI color verification, and pipes verdicts directly to Vector CANoe VN1630A CAPL test scripts and Excel logs."
+      },
+      {
+        src: "assets/images/ai_ocr_traditional_vs_multimodal.jpg",
+        badge: "Multimodal Vision Benchmark",
+        title: "Traditional OCR vs. AI-Based Multimodal OCR",
+        desc: "Strict anti-substitution comparison: Traditional template-matching OCR fails on character confusion (0/O, 1/I) and foreign characters. Our Gemini Multimodal pipeline achieves >95% accuracy and preserves exact ECU serial numbers."
+      },
+      {
+        src: "assets/images/ai_agents_cicd_pipeline.jpg",
+        badge: "Agentic CI/CD Pipeline",
+        title: "AI Agents Overnight CI/CD Workflow",
+        desc: "Automated end-to-end flow: Day 1 requirements ingestion -> Midnight AI Agent Crew autonomous execution -> Day 2 verified test cases and CAN signal bindings delivered directly to system engineers."
+      },
+      {
+        src: "assets/images/ai_testcase_agent_design.jpg",
+        badge: "Dual-Agent Architecture",
+        title: "Dual-Agent Test Case Generator & Quality Critic",
+        desc: "Collaborative agent loop between AI Test Engineer and AI Quality Critic, evaluating sensor configs, DBC definitions, and generating test steps for ADAS systems (AEB, ACC, LKA)."
+      },
+      {
+        src: "assets/images/ai_multiagent_crew_roles.jpg",
+        badge: "Multi-Agent Crew Roles",
+        title: "Specialized Multi-Agent Crew Topology",
+        desc: "Hierarchical agent roles in production: System Architect, Test Automation Engineer, Reviewer, Data Extraction Specialist, Bench Architect, and Summary Writer."
+      },
+      {
+        src: "assets/images/agentic_crews_qdrant_kb.jpg",
+        badge: "Qdrant Vector Database",
+        title: "Crew 2: Knowledge Base to Qdrant Vector Storage",
+        desc: "Extraction pipeline parsing system requirements and DBC CAN signal definitions into structured vectors stored in Qdrant for semantic search and fast RAG context retrieval."
+      },
+      {
+        src: "assets/images/ai_platform_webapp_ui.jpg",
+        badge: "Full-Stack WebApp",
+        title: "AI Test Generation Platform Web Application",
+        desc: "Production web application UI managing project profiles, automated test script dispatchers, chat interfaces, and knowledge base synchronization."
+      },
+      {
+        src: "assets/images/lrr_production_dashboard.jpg",
+        badge: "LRR Production WebApp",
+        title: "Launch Readiness Review (LRR) Production Dashboard",
+        desc: "Enterprise release gatekeeper monitoring 91.7% Testing Readiness on Time, 82.4% SystemReq Pass Rate, with optimistic concurrency locks and the Global Freeze / Unfreeze engine."
+      },
+      {
+        src: "assets/images/lrr_wide_view.jpg",
+        badge: "Governance WebApp",
+        title: "LRR Concurrency & Project Freeze Table",
+        desc: "Granular project freeze controls, milestone tracking (PRKF, SSSR, AFV, EFV), and live validation pass percentages across multiple vehicle lines."
+      },
+      {
+        src: "assets/images/bigquery_graph_architecture.jpg",
+        badge: "BigQuery GraphRAG",
+        title: "BigQuery Property Graph & Execution Plan Architecture",
+        desc: "BigQuery recursive graph analytical CTEs representing automotive requirements as nodes and directed relationship edges, eliminating hallucinations in Vertex AI LLM queries."
+      },
+      {
+        src: "assets/images/data_platform_context_view.jpg",
+        badge: "Enterprise Topology",
+        title: "Enterprise Data Platform Context View (IcePanel)",
+        desc: "End-to-end architecture topology: Ingesting IBM DOORS, CoreALM, CodeBeamer, TIBCO into Google Cloud BigQuery and Looker Studio executive platforms."
+      },
+      {
+        src: "assets/images/data_platform_app_diagram.jpg",
+        badge: "ETL Pipeline Map",
+        title: "Enterprise Application & Pipeline Topologies",
+        desc: "Detailed mapping of Bug Escape pipelines, MDM data governance, requirements consolidation, and Jenkins CI/CD automation farms."
+      },
+      {
+        src: "assets/images/data_platform_pipeline_flow.jpg",
+        badge: "Data Orchestration",
+        title: "Pipeline Orchestration & Execution Flow",
+        desc: "Automated budget tracking pipelines, STR analytics, and executive dashboard connectors deployed across Google Cloud Platform."
+      }
+    ];
+
+    let currentLightboxIdx = 0;
+
+    function openLightboxIndex(idx) {
+      currentLightboxIdx = idx;
+      updateLightboxContent();
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
+      modal.classList.add('flex', 'opacity-100');
+      document.body.classList.add('lightbox-open');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.classList.remove('lightbox-open');
+      }, 200);
+    }
+
+    function prevLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIdx = (currentLightboxIdx - 1 + artifacts.length) % artifacts.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIdx = (currentLightboxIdx + 1) % artifacts.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      const item = artifacts[currentLightboxIdx];
+      document.getElementById('lightbox-img').src = item.src;
+      document.getElementById('lightbox-badge').innerText = item.badge;
+      document.getElementById('lightbox-title').innerText = item.title;
+      document.getElementById('lightbox-desc').innerText = item.desc;
+      document.getElementById('lightbox-counter').innerText = `${currentLightboxIdx + 1} of ${artifacts.length}`;
+    }
+
+    // Keyboard controls for lightbox
+    document.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal.classList.contains('flex')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+      }
+    });
+
+    // Close on background click
+    document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox-modal') closeLightbox();
+    });
+
+    // Gallery Filtering
+    function filterGallery(cat) {
+      const items = document.querySelectorAll('.gallery-item');
+      const btns = document.querySelectorAll('.gallery-filter-btn');
+
+      btns.forEach(b => b.classList.remove('bg-blue-600', 'text-white'));
+      btns.forEach(b => b.classList.add('bg-slate-800', 'text-slate-300'));
+      event.target.classList.remove('bg-slate-800', 'text-slate-300');
+      event.target.classList.add('bg-blue-600', 'text-white');
+
+      items.forEach(item => {
+        if (cat === 'all' || item.getAttribute('data-gallery-cat') === cat) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // System Cards Filtering
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+      buttons.forEach(btn => btn.classList.add('bg-slate-800', 'text-slate-300'));
+      event.target.classList.remove('bg-slate-800', 'text-slate-300');
+      event.target.classList.add('bg-blue-600', 'text-white');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Email Interactions
+    function copyEmail() {
+      const email = "ranjith.palani.jobseeker@gmail.com";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email);
+      }
+      showToast("Email copied: " + email);
+      const btnText = document.getElementById("copy-btn-text");
+      if (btnText) {
+        btnText.innerText = "Copied!";
+        setTimeout(() => { btnText.innerText = "Copy Email"; }, 2500);
+      }
+      setTimeout(() => {
+        window.location.href = "mailto:" + email;
+      }, 300);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      if (toastMsg) toastMsg.innerText = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    // FinOps Interactive Calculator
+    function updateFinOps() {
+      const tb = parseInt(document.getElementById('tb-slider').value);
+      document.getElementById('tb-label').innerText = tb + " TB";
+      const legacy = tb * 5;
+      const optimized = Math.round(tb * 3.12);
+      const annualSavings = (legacy - optimized) * 12;
+
+      document.getElementById('legacy-cost').innerText = "$" + legacy + " / mo";
+      document.getElementById('optimized-cost').innerText = "$" + optimized + " / mo";
+      document.getElementById('annual-savings').innerText = "$" + annualSavings.toLocaleString() + " / yr";
+    }
+  </script>
+</body>
+</html>
